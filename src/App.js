@@ -1,8 +1,29 @@
 import './App.css';
 import Table from 'react-bootstrap/Table';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Contacts from './Contacts';
 
 function App() {
+  let data = [
+    {
+      id: 1,
+      firstName: "Conrad",
+      lastName: "Mugisha",
+      contact: "0706848422"
+    },
+    {
+      id: 2,
+      firstName: "John",
+      lastName: "Doe",
+      contact: "0788042453"
+    },
+    {
+      id: 3,
+      firstName: "Mary",
+      lastName: "Jane",
+      contact: "0774561298"
+    }
+  ];
   return (
     <div className="App">
       <header className="app__header">
@@ -22,7 +43,14 @@ function App() {
               <th>Last Name</th>
               <th>Contacts</th>
             </tr>
-          </thead>          
+          </thead>
+          <tbody>
+            {
+              data.map((obj)=> {
+                <Contacts id={obj.id} firstName={obj.firstName} lastName={obj.lastName} contact={obj.contact} />
+              })
+            }
+          </tbody>
         </Table>
       </div>
     </div>
