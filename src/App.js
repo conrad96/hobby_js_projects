@@ -47,6 +47,8 @@ function App() {
           <tbody>
             {
               data.map((obj)=> {
+                console.log(obj.firstName);
+                
                 <Contacts id={obj.id} firstName={obj.firstName} lastName={obj.lastName} contact={obj.contact} />
               })
             }
