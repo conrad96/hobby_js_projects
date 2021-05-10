@@ -8,3 +8,13 @@
     text-align: center;
     padding-bottom: 25px;
 }
+.search__record
+{
+    margin-top: 8px;
+    margin: 2%;
+}
+.search__contactsList
+{
+  margin-top: 25px;  
+  margin: 10px;
+}

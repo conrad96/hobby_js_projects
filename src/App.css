@@ -4,19 +4,3 @@
   color: gray;
   text-align: center;
 }
-.app__contactsList
-{
-  margin-top: 25px;  
-  margin: 10px;
-}
-.app__contactsList > span
-{
-  display: inline;
-  flex-direction: column;
-  margin: 8px;
-}
-.app__searchRecord
-{
-  margin-top: 8px;
-  margin: 2%;
-}

@@ -1,28 +1,9 @@
 import Table from 'react-bootstrap/Table';
 
-function Contacts()
-{    
-    let data = [
-        {
-          id: 1,
-          firstName: "Conrad",
-          lastName: "Mugisha",
-          contact: "0706848422"
-        },
-        {
-          id: 2,
-          firstName: "John",
-          lastName: "Doe",
-          contact: "0788042453"
-        },
-        {
-          id: 3,
-          firstName: "Mary",
-          lastName: "Jane",
-          contact: "0774561298"
-        }
-      ];
-      
+function Contacts(contacts)
+{
+    let data = contacts.list;
+    
     return (
         <Table responsive hover>
             <thead>
