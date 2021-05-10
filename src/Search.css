@@ -1,0 +1,10 @@
+.search__field
+{
+    width: 50%;
+    border: 1px sold red;    
+}
+.search__box
+{
+    text-align: center;
+    padding-bottom: 25px;
+}

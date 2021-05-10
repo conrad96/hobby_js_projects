@@ -23,19 +23,6 @@ function Contacts()
         }
       ];
       
-let ids = data.map((obj)=> {
-    return obj.id
-})
-
-let fisrtNames = data.map((obj)=> {
-    return obj.firstName
-})
-
-let lastNames = data.map((obj)=> {
-    return obj.lastName
-})
-
-
     return (
         <Table responsive hover>
             <thead>

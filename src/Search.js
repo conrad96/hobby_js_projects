@@ -1,9 +1,11 @@
+import {TextField} from '@material-ui/core'
+import './Search.css';
 
 function Search()
 {
     return (
-        <form>
-          <input type="text" placeholder="Search..." className="form-control" />
+        <form className="search__box">          
+            <TextField className="search__field" label="search" />
         </form>
     )
 }
